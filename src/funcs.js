@@ -267,7 +267,7 @@ module.exports = bot => {
                 }
             } else {
                 for (let key in quotes) {
-                    if (msg.content.toLowerCase().indexOf(key) !== -1) {
+                    if (msg.content.toLowerCase().indexOf(key.toLowerCase()) !== -1) {
                         msg.channel.send(quotes[key]);
                     }
                 }
