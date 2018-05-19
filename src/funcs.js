@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./data/servers.sqlite');
 const fs = require('fs');
 const unirest = require('unirest');
-const snekfetch = require('snekfetch');
+const quotes = require('./data/quotes.json');
 const Discord = require('discord.js');
 if (process.argv[2] && process.argv[2] === '--travis') var config = require('./data/config-example.json');
 else config = require('./data/config.json');
@@ -264,6 +264,12 @@ module.exports = bot => {
                 } catch (err) {
                     msg.channel.send('Oh no! We encountered an error:\n```' + err.stack + '```');
                     bot.error(err.stack);
+                }
+            } else {
+                for (let key in quotes) {
+                    if (msg.content.toLowerCase().indexOf(key) !== -1) {
+                        msg.channel.send(quotes[key]);
+                    }
                 }
             }
         }).catch(console.error);
