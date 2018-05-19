@@ -1,5 +1,5 @@
-if (process.argv[2] && process.argv[2] === '--travis') let config = require('../data/config-example.json');
-else config = require('./config.json');
+if (process.argv[2] && process.argv[2] === '--travis') var config = require('./data/config-example.json');
+else config = require('./data/config.json');
 const Discord = require('discord.js');
 const bot = new Discord.Client(config.opts);
 bot.config = config;
