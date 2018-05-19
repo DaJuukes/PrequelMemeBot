@@ -1,2 +1,2 @@
 # PrequelMemeBot
-A Discord bot that responds to prequel memes!
+A Discord bot that responds with prequel memes!
