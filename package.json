@@ -1,0 +1,25 @@
+{
+  "name": "prequelmemebot",
+  "version": "0.0.1",
+  "description": "A DIscord bot that replies with prequel memes!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "cd test && mocha --no-timeouts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaJuukes/PrequelMemeBot.git"
+  },
+  "keywords": [
+    "Bot",
+    "Prequels",
+    "Star",
+    "wars"
+  ],
+  "author": "DaJuukes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaJuukes/PrequelMemeBot/issues"
+  },
+  "homepage": "https://github.com/DaJuukes/PrequelMemeBot#readme"
+}
